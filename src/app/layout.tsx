@@ -1,21 +1,13 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Inter } from "next/font/google";
 import "../styles/globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "RefHub",
-  description: "",
+  title: "Skill Assessment & Reference Checking Software | Ref Hub",
+  description:
+    "Run AI-powered skill assessments and automate reference checks with Ref Hub. Trusted by 1,200+ Australian businesses. Try it free.",
 };
 
 export default function RootLayout({
@@ -24,10 +16,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="en-AU">
+      <body className={`${inter.variable} font-sans antialiased`}>
         {children}
       </body>
     </html>

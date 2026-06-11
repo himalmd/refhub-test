@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:cdn.prod.website-files.com)",
+      "Bash(node -e \"const p = require\\('./node_modules/lucide-react/package.json'\\); console.log\\(p.version\\)\")",
+      "Bash(node -e \"const l = require\\('lucide-react'\\); const icons = ['Check','CheckCircle','X','Menu','ChevronDown','ArrowRight','Phone','Mail','MapPin','Linkedin','Instagram','Facebook','BookOpen','Zap','SlidersHorizontal','Clock','Bell','BarChart3','Users','Heart','Activity','Package','TrendingUp','FileText','ShieldCheck','Globe','Star','Shield','Lock']; icons.forEach\\(i => console.log\\(i, !!l[i]\\)\\)\")",
+      "Bash(node -e \"const l = require\\('lucide-react'\\); const icons = ['Share2','ExternalLink','Link','Globe2']; icons.forEach\\(i => console.log\\(i, !!l[i]\\)\\)\")",
+      "Bash(node -e \"const l = require\\('lucide-react'\\); Object.keys\\(l\\).filter\\(k => /^\\(Li|In|Fb|Face|Gram|Link\\)/i.test\\(k\\)\\).slice\\(0,20\\).forEach\\(k => console.log\\(k\\)\\)\")",
+      "Bash(npm run *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(cat /tmp/next-dev.log | tail -20)",
+      "Read(//private/tmp/**)",
+      "Bash(curl -s http://localhost:3001)",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(npm run dev > /tmp/dev-server.log 2>&1 & *)",
+      "Bash(curl -s http://localhost:3000)"
+    ],
+    "additionalDirectories": [
+      "/tmp"
+    ]
+  }
+}
