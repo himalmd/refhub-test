@@ -13,10 +13,12 @@
       "Bash(curl -s http://localhost:3001)",
       "Bash(pkill -f \"next dev\")",
       "Bash(npm run dev > /tmp/dev-server.log 2>&1 & *)",
-      "Bash(curl -s http://localhost:3000)"
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(rm /Users/himal/Documents/Coding/refhub/refhub-test/src/app/studio/[[...tool]]/page.tsx && echo \"removed\")"
     ],
     "additionalDirectories": [
-      "/tmp"
+      "/tmp",
+      "/Users/himal/Documents/Coding/refhub/refhub-test/src/app/studio/[[...tool]]"
     ]
   }
 }
