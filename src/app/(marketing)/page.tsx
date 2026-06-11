@@ -22,9 +22,9 @@ export default function Home() {
       <SupademoSection />
       <Testimonials />
       <AUTrustBadge />
-      <ReferenceChecks />
       <Pricing />
       <TrustSection />
+      <ReferenceChecks />
       <CTASection />
     </main>
   )
